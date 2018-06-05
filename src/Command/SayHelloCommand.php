@@ -9,7 +9,7 @@
 namespace App\Command;
 
 
-use App\service\Greeting;
+use App\Service\Greeting;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

@@ -6,7 +6,7 @@
  * Time: 5:52 PM
  */
 
-namespace App\service;
+namespace App\Service;
 
 
 use Psr\Log\LoggerInterface;
