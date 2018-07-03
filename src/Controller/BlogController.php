@@ -83,12 +83,18 @@ use Symfony\Component\Routing\RouterInterface;
         return new RedirectResponse($this->router->generate('blog_index'));
     }
 
+
      /**
       * @Route ("/show/{id}", name="blog_show")
       * @param $id
+      * @return Response
+      * @throws \Twig_Error_Loader
+      * @throws \Twig_Error_Runtime
+      * @throws \Twig_Error_Syntax
       */
-    public function show($id)
+     public function show($id)
     {
+
         $posts = $this->session->get('posts');
         if(!$posts || !isset($posts[$id]))
         {
