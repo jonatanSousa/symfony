@@ -9,6 +9,7 @@
 namespace App\Controller;
 
 
+use App\Entity\MicroPost;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -34,6 +35,8 @@ use Symfony\Component\Routing\RouterInterface;
       * @var RouterInterface
       */
      private $router;
+
+     private $entityManager;
 
      /**
       * BlogController constructor.
@@ -64,6 +67,7 @@ use Symfony\Component\Routing\RouterInterface;
         );
 
         return new Response($html);
+
     }
 
      /**

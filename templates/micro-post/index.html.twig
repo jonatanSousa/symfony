@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}  lalalal  {%  endblock %}
+
+{% block body %}
+   {% for id, post in posts %}
+       <p>
+        id :  {{ post.id }}
+        text : {{ post.text }}
+       </p>
+   {% endfor %}
+
+{% endblock %}
+
